@@ -1,0 +1,128 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color-pri);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* colors */
+  --theme-color: #007555;
+  --bg-color-pri: #f5f5f5;
+  --bg-color-sec: #ffffff;
+  --bg-color-warn: #fdbb00;
+  --border-color-pri: #c8ccc8;
+  --border-color-sec: #e5eae5;
+  --text-color-pri: #1a1d1b;
+  --text-color-sec: #353b37;
+  --text-color-ter: #8b948e;
+
+  /* text sizing */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* Shadow */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color-pri);
+}
+
+input,
+select {
+  height: 40px;
+  padding: 12px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid var(--border-color);
+}
+
+input:focus,
+select:focus {
+  border: 2px solid #4583ff;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.btn {
+  border: none;
+  background-color: var(--theme-color);
+  height: 40px;
+  padding: var(--space-sm) var(--space-lg);
+  color: var(--bg-color-sec);
+  cursor: pointer;
+}
+.btn:hover {
+  filter: brightness(0.9);
+}
+
+.icon {
+  color: var(--text-color-sec);
+  font-size: var(--font-size-md);
+}
+
+.icon-sm {
+  font-size: var(--font-size-sm);
+}
+.icon-lg {
+  font-size: var(--font-size-lg);
+}
+.icon-xl {
+  font-size: var(--font-size-xl);
+}
+
+
+/* Spinner styles */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid var(--theme-color);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

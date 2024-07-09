@@ -1,0 +1,114 @@
+.product-picker__wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #0000006b;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: var(--space-lg);
+}
+
+.picker__card {
+  background-color: var(--bg-color-sec);
+  border-radius: 6px;
+  max-height: 80vh;
+  overflow: auto;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+.picker__card::-webkit-scrollbar {
+  width: 0;
+}
+
+.picker__card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color-pri);
+  padding: var(--space-md);
+  font-weight: 400;
+}
+
+.picker__card-search {
+  width: 100%;
+  padding: var(--space-md);
+}
+
+.picker__card-search__input {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid var(--border-color-sec);
+}
+
+.picker__card-search__input input {
+  padding-left: var(--space-xl);
+  width: 100%;
+}
+
+.picker__card-search__input .search-icon {
+  position: absolute;
+  left: 0;
+  margin-left: var(--space-sm);
+}
+
+.picker__card-product-list {
+  border-bottom: 1px solid var(--border-color-pri);
+}
+.picker__card-product-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--border-color-pri);
+}
+.picker__card-product-item .product-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 2px;
+  border: 1px solid var(--border-color-sec);
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picker__card-product-subitem {
+  padding: var(--space-md) 0 var(--space-md) var(--space-xl);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  border-bottom: 1px solid var(--border-color-pri);
+}
+
+.picker__card-bottom-bar {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  padding: var(--space-md);
+  background-color: var(--bg-color-sec);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.bottom-bar__btn {
+  border-radius: 4px;
+  height: 30px !important;
+  padding: var(--space-sm) var(--space-md) !important;
+}
+
+.picker__card-bottom-bar__btns .--cancel {
+  background-color: transparent;
+  border: 1px solid var(--text-color-sec);
+  color: var(--text-color-sec);
+  margin-right: var(--space-sm);
+}
