@@ -88,6 +88,13 @@
   border-bottom: 1px solid var(--border-color-pri);
 }
 
+.variant-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 56px);
+}
+
 .picker__card-bottom-bar {
   position: sticky;
   bottom: 0;

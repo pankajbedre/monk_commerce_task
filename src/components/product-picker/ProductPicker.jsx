@@ -183,7 +183,7 @@ function ProductPicker({ onclosePicker, onProductAdd }) {
                       })
                     }
                   />
-                  <p>{variant.title}</p>
+                  <p className="variant-text">{variant.title} <span>₹{variant.price}</span></p>
                 </div>
               ))}
             </div>
